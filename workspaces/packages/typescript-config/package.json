@@ -1,0 +1,12 @@
+{
+  "name": "@gytoub/typescript-config",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "typescript-plugin-css-modules": "^5"
+  }
+}

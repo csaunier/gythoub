@@ -1,0 +1,24 @@
+{
+  "name": "@gytoub/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "base.js"
+  ],
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-turbo": "^2",
+    "eslint-config-prettier": "^9",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-fb9a90fa48-20240614",
+    "eslint-plugin-jsx-a11y": "^6",
+    "@types/eslint__js": "^8",
+    "typescript": "^5",
+    "typescript-eslint": "^8",
+    "globals": "^15"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9"
+  }
+}

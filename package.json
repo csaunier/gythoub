@@ -3,12 +3,18 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "dev:nextjs": "turbo dev --filter=@gytoub/nextjs",
+    "dev:ui": "turbo dev --filter=@gytoub/docusaurus",
+    "lint:ui": "turbo lint --filter=@gytoub/ui",
+    "lint:nextjs": "turbo lint --filter=@gytoub/nextjs",
+    "typecheck": "turbo typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3",
     "turbo": "^2.1.3",
     "typescript": "^5.4.5"
   },
@@ -17,7 +23,12 @@
   },
   "packageManager": "npm@10.5.0",
   "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+    "workspaces/apps/*",
+    "workspaces/packages/*",
+    "workspaces/ui/*",
+    "workspaces/domains"
+  ],
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
 }

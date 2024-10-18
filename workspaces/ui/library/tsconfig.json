@@ -1,0 +1,11 @@
+{
+  "extends": "@gytoub/typescript-config/base.json",
+  "compilerOptions": {
+    "declaration": true,
+    "composite": true,
+    "sourceMap": true,
+    "declarationMap": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["../../../global.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
+}
