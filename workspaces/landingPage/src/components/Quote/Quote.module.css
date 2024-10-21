@@ -32,6 +32,7 @@
   position: absolute;
   background-image: var(--quoteRightSrc);
   background-position-x: 100%;
+  background-position-y: bottom;
   width: 200px;
   height: 100%;
   right: 0;
