@@ -1,0 +1,26 @@
+.title {
+  text-align: center;
+}
+
+.text {
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 900;
+  position: relative;
+  margin: 0 0 32px;
+  color: white;
+  z-index: 1;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.text:before {
+  position: absolute;
+  bottom: -4px;
+  left: -8px;
+  right: -8px;
+  content: "";
+  height: 18px;
+  border-radius: 4px;
+  background: linear-gradient(45deg, rgba(2, 96, 113, 1) 0%, rgba(72, 0, 117, 1) 100%);
+  z-index: -1;
+}

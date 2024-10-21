@@ -1,0 +1,18 @@
+---
+import styles from "./Quote.module.css"
+
+import quoteLeft from "../../assets/quote-left.svg"
+import quoteRight from "../../assets/quote-right.svg"
+---
+
+<div
+  class={styles.quoteWrapper}
+  style={{
+    "--quoteLeftSrc": `url(${quoteLeft.src})`,
+    "--quoteRightSrc": `url(${quoteRight.src})`
+  }}
+>
+    <span class={styles.quote}>
+      It's all about exploring, learning, and creating at my own pace.
+    </span>
+</div>

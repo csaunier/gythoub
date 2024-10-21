@@ -1,0 +1,14 @@
+.main {
+  padding: 16px 32px;
+  color: white;
+  font-size: 18px;
+}
+
+.content {
+  columns: 2;
+  column-gap: 32px;
+}
+
+.content > p:first-child {
+  margin-top: 0;
+}

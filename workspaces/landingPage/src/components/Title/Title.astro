@@ -1,0 +1,15 @@
+---
+import type { PropsWithChildren } from "react"
+
+import styles from "./Title.module.css"
+
+type Props = PropsWithChildren
+
+const { children } = Astro.props;
+---
+
+<h2 class={styles.title}>{children}
+  <span class={styles.text}>
+    <slot />
+  </span>
+</h2>

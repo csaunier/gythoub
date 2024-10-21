@@ -1,23 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Header from '../components/Header/Header.astro';
 import Hero from "../components/Hero/Hero.astro"
+import About from "../components/About/About.astro"
 ---
 
 <Layout title="Welcome to Gytoub.">
 	<Header />
 	<Hero />
-	<main>
-		<h1>Welcome to <span class="text-gradient">Gytoub</span></h1>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-		</ul>
-	</main>
+	<About />
 </Layout>
 
 <style>

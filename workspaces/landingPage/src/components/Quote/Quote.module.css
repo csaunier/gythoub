@@ -1,0 +1,42 @@
+.quoteWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.quote {
+  font-weight: 600;
+  text-align: center;
+  font-size: 32px;
+  margin: 24px 0;
+  font-style: italic;
+  position: relative;
+  padding: 24px;
+  z-index: 1;
+}
+
+.quote:before {
+  content: "";
+  position: absolute;
+  background-image: var(--quoteLeftSrc);
+  width: 200px;
+  height: 100%;
+  left: 0;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  top: 0;
+  z-index: -1;
+}
+
+.quote:after {
+  content: "";
+  position: absolute;
+  background-image: var(--quoteRightSrc);
+  background-position-x: 100%;
+  width: 200px;
+  height: 100%;
+  right: 0;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  top: 0;
+  z-index: -1;
+}
