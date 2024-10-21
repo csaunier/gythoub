@@ -5,6 +5,7 @@
     "build": "turbo build",
     "dev:nextjs": "turbo dev --filter=@gytoub/nextjs",
     "dev:ui": "turbo dev --filter=@gytoub/docusaurus",
+    "dev:landingPage": "turbo dev --filter=@gytoub/landingpage",
     "lint:ui": "turbo lint --filter=@gytoub/ui",
     "lint:nextjs": "turbo lint --filter=@gytoub/nextjs",
     "typecheck": "turbo typecheck",
@@ -23,6 +24,7 @@
   },
   "packageManager": "npm@10.5.0",
   "workspaces": [
+    "workspaces/landingPage",
     "workspaces/apps/*",
     "workspaces/packages/*",
     "workspaces/ui/*",

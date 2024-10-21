@@ -1,0 +1,29 @@
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 2px;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.link:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(45deg, rgba(232, 71, 230, 1) 0%, rgba(240, 59, 59, 1) 100%);
+  transition: height 0.1s;
+}
+
+.link:after {
+  padding-left: 24px;
+  content: "&";
+}
+
+.link:hover:before {
+  height: 4px;
+}

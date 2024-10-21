@@ -1,0 +1,14 @@
+---
+import styles from './WebAppLink.module.css'
+
+type Props = {
+  text: string;
+  href: string;
+}
+
+const { text, href } = Astro.props;
+---
+
+<a class={styles.link} href={href}>
+  {text}
+</a>
