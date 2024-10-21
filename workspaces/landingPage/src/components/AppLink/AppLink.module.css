@@ -1,0 +1,44 @@
+.linkWrapper {
+  text-decoration: none;
+  width: 120px;
+  height: 140px;
+  position: relative;
+}
+
+.link {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 8px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transition: transform 0.2s ease-in-out 0s;
+}
+
+.linkFront {
+  background: linear-gradient(45deg, rgba(232, 71, 230, 1) 0%, rgba(240, 59, 59, 1) 100%);
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.linkBack {
+  background: linear-gradient(45deg, rgba(2, 96, 113, 1) 0%, rgba(72, 0, 117, 1) 100%);
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.img {
+  margin-bottom: 16px;
+}
+
+.linkWrapper:hover > .linkFront {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.linkWrapper:hover > .linkBack {
+  transform: perspective(600px) rotateY(0deg);
+}

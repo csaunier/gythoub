@@ -1,0 +1,23 @@
+---
+import Title from "../Title/Title.astro"
+import AppLink from "../AppLink/AppLink.astro"
+import android from "../../assets/google-play.svg"
+import ios from "../../assets/store-ios.svg"
+import windows from "../../assets/windows.svg"
+import linux from "../../assets/linux.svg"
+import mac from "../../assets/apple.svg"
+
+import styles from "./DownloadApps.module.css"
+---
+<div class={styles.main}>
+  <Title isAlternative>Get your app(s) (soon)</Title>
+  <div class={styles.appsWrapper}>
+    <div class={styles.apps}>
+      <AppLink href="#" imgSrc={android}>Android</AppLink>
+      <AppLink href="#" imgSrc={ios}>Ios</AppLink>
+      <AppLink href="#" imgSrc={windows}>Windows</AppLink>
+      <AppLink href="#" imgSrc={linux}>Linux</AppLink>
+      <AppLink href="#" imgSrc={mac}>Mac OS</AppLink>
+    </div>
+  </div>
+</div>

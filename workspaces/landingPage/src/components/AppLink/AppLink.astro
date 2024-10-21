@@ -1,0 +1,29 @@
+---
+import type { PropsWithChildren } from "react"
+import { Image } from 'astro:assets';
+
+import styles from "./AppLink.module.css"
+
+type Props = PropsWithChildren<{
+  imgSrc: string,
+  href: string
+}>
+
+const { imgSrc, href } = Astro.props;
+---
+
+<a
+  href={href}
+  class={styles.linkWrapper}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span class:list={[styles.link, styles.linkFront]}>
+    <Image src={imgSrc} alt="" class={styles.img} />
+    <slot />
+  </span>
+  <span class:list={[styles.link, styles.linkBack]}>
+    <Image src={imgSrc} alt="" class={styles.img} />
+    <slot />
+  </span>
+</a>

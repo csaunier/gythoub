@@ -16,6 +16,8 @@ const { href } = Astro.props;
   style={{
     "--externalLinksSrc": `url(${externalLinks.src})`
   }}
+  target="_blank"
+  rel="noopener noreferrer"
 >
   <slot />
 </a>

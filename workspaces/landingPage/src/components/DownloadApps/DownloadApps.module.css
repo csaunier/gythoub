@@ -1,0 +1,26 @@
+.main {
+  background: linear-gradient(45deg, rgba(2, 96, 113, 1) 0%, rgba(72, 0, 117, 1) 100%);
+  padding: 16px;
+}
+
+.appsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.apps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (width > 800px) {
+  .main {
+    padding: 16px 32px;
+  }
+
+  .apps {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
