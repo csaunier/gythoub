@@ -6,10 +6,16 @@
 
 .content {
   text-align: justify;
+  max-width: 990px;
 }
 
 .content > p:first-child {
   margin-top: 0;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
 }
 
 @media (width > 800px) {

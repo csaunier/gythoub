@@ -5,18 +5,22 @@
   position: relative;
   display: inline-block;
   color: white;
+  z-index: 1;
 }
 
 .link:before {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: -4px;
+  right: -4px;
   content: "";
   height: 2px;
   border-radius: 1px;
   background: linear-gradient(45deg, rgba(232, 71, 230, 1) 0%, rgba(240, 59, 59, 1) 100%);
-  transition: height 0.1s;
+  transition:
+    height 0.1s,
+    border-radius 0.1s;
+  z-index: -1;
 }
 
 .link:after {
@@ -34,5 +38,6 @@
 }
 
 .link:hover:before {
-  height: 6px;
+  height: 34px;
+  border-radius: 4px;
 }
