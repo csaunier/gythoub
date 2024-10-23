@@ -3,13 +3,13 @@
   width: 120px;
   height: 140px;
   position: relative;
+  color: inherit;
 }
 
 .link {
   padding: 16px 24px;
   display: flex;
   flex-direction: column;
-  color: white;
   border-radius: 8px;
   align-items: center;
   position: absolute;

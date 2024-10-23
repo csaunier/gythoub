@@ -4,7 +4,7 @@
   padding: 8px 40px 8px 2px;
   position: relative;
   display: inline-block;
-  color: white;
+  color: inherit;
   z-index: 1;
 }
 
