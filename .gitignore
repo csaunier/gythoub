@@ -27,6 +27,8 @@ out/
 build
 dist
 
+# astro
+.astro/
 
 # Debug
 npm-debug.log*
