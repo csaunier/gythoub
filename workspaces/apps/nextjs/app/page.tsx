@@ -1,4 +1,4 @@
-import { Button } from "@gytoub/ui/button"
+import { Button } from "@gythoub/ui/button"
 import styles from "./page.module.css"
 
 export default function Home() {

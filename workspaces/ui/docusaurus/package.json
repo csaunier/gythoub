@@ -1,5 +1,5 @@
 {
-  "name": "@gytoub/docusaurus",
+  "name": "@gythoub/docusaurus",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -28,7 +28,7 @@
     "@docusaurus/tsconfig": "3.5.2",
     "@docusaurus/types": "3.5.2",
     "typescript": "^5",
-    "@gytoub/typescript-config": "*"
+    "@gythoub/typescript-config": "*"
   },
   "browserslist": {
     "production": [

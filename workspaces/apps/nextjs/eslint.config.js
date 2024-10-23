@@ -1,7 +1,7 @@
-import gytoubEslintConfig from "@gytoub/eslint-config/base.js"
+import gythoubEslintConfig from "@gythoub/eslint-config/base.js"
 
 export default [
-  ...gytoubEslintConfig,
+  ...gythoubEslintConfig,
   {
     ignores: [".next/*"],
   },
