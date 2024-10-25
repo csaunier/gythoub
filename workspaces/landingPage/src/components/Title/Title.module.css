@@ -4,28 +4,28 @@
 
 .text {
   display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 32px;
   font-size: 24px;
   font-weight: 900;
-  position: relative;
-  margin: 0 0 32px;
-  z-index: 1;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 2px rgb(0 0 0 / 60%);
 }
 
-.text:before {
+.text::before {
+  content: "";
   position: absolute;
+  z-index: -1;
+  right: -8px;
   bottom: -4px;
   left: -8px;
-  right: -8px;
-  content: "";
   height: 18px;
   border-radius: 4px;
-  background: linear-gradient(45deg, rgba(2, 96, 113, 1) 0%, rgba(72, 0, 117, 1) 100%);
-  z-index: -1;
+  background: linear-gradient(45deg, rgb(2 96 113 / 100%) 0%, rgb(72 0 117 / 100%) 100%);
 }
 
-.text--alternative:before {
-  background: linear-gradient(45deg, rgba(232, 71, 230, 1) 0%, rgba(240, 59, 59, 1) 100%);
+.text--alternative::before {
+  background: linear-gradient(45deg, rgb(232 71 230 / 100%) 0%, rgb(240 59 59 / 100%) 100%);
 }
 
 @media (width > 800px) {

@@ -1,33 +1,33 @@
 ---
-import '@fontsource-variable/inter';
+import "@fontsource-variable/inter"
 
 import styles from "./Layout.module.css"
 
 interface Props {
-	title: string;
+  title: string
 }
 
-const { title } = Astro.props;
+const { title } = Astro.props
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Gythoub : Review Github PR's like a boss" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class={styles.body}>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Gythoub : Review Github PR's like a boss" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class={styles.body}>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	html {
-		font-family: 'Inter Variable', sans-serif;
-		color: #ffffff;
-		background: #131539;
-	}
+  html {
+    font-family: "Inter Variable", sans-serif;
+    color: #ffffff;
+    background: #131539;
+  }
 </style>

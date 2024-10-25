@@ -1,9 +1,9 @@
 .main {
-  height: 64px;
-  background: linear-gradient(45deg, rgba(15, 28, 57, 1) 0%, rgba(35, 0, 58, 1) 100%);
   display: flex;
   align-items: center;
-  gap: 24px;
   justify-content: flex-end;
+  height: 64px;
   padding-right: 32px;
+  background: linear-gradient(45deg, rgb(15 28 57 / 100%) 0%, rgb(35 0 58 / 100%) 100%);
+  gap: 24px;
 }

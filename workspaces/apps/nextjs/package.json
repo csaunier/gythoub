@@ -7,7 +7,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings 0",
+    "lint": "eslint . --max-warnings 0 && stylelint --cache **/*.css",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -18,12 +18,18 @@
   },
   "devDependencies": {
     "@gythoub/eslint-config": "*",
+    "@gythoub/stylelint-config": "*",
     "@gythoub/typescript-config": "*",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^9",
+    "@gythoub/lintstaged-config": "*",
+    "@gythoub/prettier-config": "*",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^9.14.0",
     "@next/eslint-plugin-next": "^14.2.15",
-    "typescript": "^5"
+    "typescript": "^5.6.3",
+    "stylelint": "^16.10.0",
+    "prettier": "^3.3.3",
+    "lint-staged": "^15.2.10"
   }
 }

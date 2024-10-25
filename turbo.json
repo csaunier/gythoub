@@ -13,6 +13,9 @@
     "typecheck": {
       "dependsOn": ["^lint"]
     },
+    "eslint:fix": {
+      "dependsOn": ["^eslint:fix"]
+    },
     "dev": {
       "cache": false,
       "persistent": true

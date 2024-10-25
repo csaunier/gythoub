@@ -1,10 +1,10 @@
 .main {
-  height: 300px;
-  background: linear-gradient(45deg, rgba(2, 96, 113, 1) 0%, rgba(72, 0, 117, 1) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 300px;
   padding: 0 16px;
+  background: linear-gradient(45deg, rgb(2 96 113 / 100%) 0%, rgb(72 0 117 / 100%) 100%);
 }
 
 .title {
@@ -12,27 +12,27 @@
   font-size: 36px;
   font-weight: 900;
   text-align: center;
-  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 4px 4px 2px rgb(0 0 0 / 60%);
 }
 
 .oversize {
-  font-size: 72px;
   display: inline-block;
   position: relative;
   z-index: 1;
   margin-bottom: 24px;
+  font-size: 72px;
 }
 
-.oversize:before {
+.oversize::before {
+  content: "";
   position: absolute;
+  z-index: -1;
+  right: -8px;
   bottom: -4px;
   left: -8px;
-  right: -8px;
-  content: "";
   height: 30px;
   border-radius: 4px;
-  background: linear-gradient(45deg, rgba(232, 71, 230, 1) 0%, rgba(240, 59, 59, 1) 100%);
-  z-index: -1;
+  background: linear-gradient(45deg, rgb(232 71 230 / 100%) 0%, rgb(240 59 59 / 100%) 100%);
 }
 
 .subtitle {

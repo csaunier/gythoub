@@ -1,20 +1,20 @@
 ---
 import externalLinks from "../../assets/external-link.svg"
-import styles from './WebAppLink.module.css'
+import styles from "./WebAppLink.module.css"
 import type { PropsWithChildren } from "react"
 
 type Props = PropsWithChildren<{
-  href: string;
+  href: string
 }>
 
-const { href } = Astro.props;
+const { href } = Astro.props
 ---
 
 <a
   class={styles.link}
   href={href}
   style={{
-    "--externalLinksSrc": `url(${externalLinks.src})`
+    "--externalLinksSrc": `url(${externalLinks.src})`,
   }}
   target="_blank"
   rel="noopener noreferrer"

@@ -1,0 +1,12 @@
+{
+  "name": "@gythoub/prettier-config",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "base.js"
+  ],
+  "type": "module",
+  "peerDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

@@ -26,6 +26,6 @@ export default tsEslint.config(
         ...globals.node,
       },
     },
-    ignores: ["node_modules/", "dist/"],
+    ignores: ["node_modules/", "dist/", "**/*.d.ts"],
   }
 )

@@ -4,8 +4,8 @@
 }
 
 .content {
-  text-align: justify;
   max-width: 990px;
+  text-align: justify;
 }
 
 .content > p:first-child {

@@ -1,6 +1,6 @@
 .main {
-  background: linear-gradient(45deg, rgba(2, 96, 113, 1) 0%, rgba(72, 0, 117, 1) 100%);
   padding: 16px;
+  background: linear-gradient(45deg, rgb(2 96 113 / 100%) 0%, rgb(72 0 117 / 100%) 100%);
 }
 
 .appsWrapper {

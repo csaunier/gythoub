@@ -4,40 +4,40 @@
 }
 
 .quote {
+  position: relative;
+  z-index: 1;
+  margin: 24px 0;
+  padding: 24px;
+  font-size: 32px;
+  font-style: italic;
   font-weight: 600;
   text-align: center;
-  font-size: 32px;
-  margin: 24px 0;
-  font-style: italic;
-  position: relative;
-  padding: 24px;
-  z-index: 1;
 }
 
-.quote:before {
+.quote::before {
   content: "";
   position: absolute;
-  background-image: var(--quoteLeftSrc);
+  z-index: -1;
+  top: 0;
+  left: 0;
   width: 200px;
   height: 100%;
-  left: 0;
-  background-size: 60%;
+  background-image: var(--quoteLeftSrc);
   background-repeat: no-repeat;
-  top: 0;
-  z-index: -1;
+  background-size: 60%;
 }
 
-.quote:after {
+.quote::after {
   content: "";
   position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
   background-image: var(--quoteRightSrc);
+  background-repeat: no-repeat;
+  background-size: 60%;
   background-position-x: 100%;
   background-position-y: bottom;
-  width: 200px;
-  height: 100%;
-  right: 0;
-  background-size: 60%;
-  background-repeat: no-repeat;
-  top: 0;
-  z-index: -1;
 }
